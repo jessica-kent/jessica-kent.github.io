@@ -16,15 +16,36 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/x-icon" href="icon.ico?">
 </head>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li> 
+                <li><a href="cv.html">CV</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 <body>
 
     <h1>My CV</h1>
-    <object
-        type="application/pdf"
-        data="pdf/CV.pdf" width="600"
-        height="700"
-    >
-    </object>
+    <iframe class="pdf" 
+            src="pdf/CV.pdf"
+            width="800" height="500" >
+        </iframe>
     
     <!-- Other people may like it too! -->
     <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
